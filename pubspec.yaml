@@ -1,6 +1,6 @@
 name: kps_public
 description: KPS Public Web Service Dart Library
-version: 0.0.2
+version: 0.0.3
 homepage: https://github.com/omerfarukorhan/kps_public
 
 environment:
