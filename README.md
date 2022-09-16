@@ -5,11 +5,7 @@ KPS Public Web Service Dart Library
 ```dart
   KPSPublic kPSPublic = KPSPublic();
 
-  // SOAP 1.1
-  bool result1_1 = await kPSPublic.TCKimlikNoDogrulaSOAP1_1(
-      TCKimlikNo: "TCKimlikNo", Ad: "Ad", Soyad: "Soyad", DogumYili: "DogumYili");
-
   // SOAP 1.2
-  bool result1_2 = await kPSPublic.TCKimlikNoDogrulaSOAP1_2(
+  bool result = await kPSPublic.TCKimlikNoDogrula(
       TCKimlikNo: "TCKimlikNo", Ad: "Ad", Soyad: "Soyad", DogumYili: "DogumYili");
 ```
