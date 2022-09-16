@@ -1,5 +1,4 @@
-import 'package:flutter_test/flutter_test.dart';
-
+import 'package:test/test.dart';
 import 'package:kps_public/kps_public.dart';
 
 void main() async {
@@ -7,12 +6,7 @@ void main() async {
     KPSPublic kPSPublic = KPSPublic();
     expect(
         await kPSPublic.TCKimlikNoDogrula(
-            TCKimlikNo: "",
-            Ad: "",
-            Soyad: "",
-            DogumYili: ""),
+            TCKimlikNo: "", Ad: "", Soyad: "", DogumYili: ""),
         true);
   });
 }
-
-
