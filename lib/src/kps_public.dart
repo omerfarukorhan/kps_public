@@ -32,7 +32,10 @@ class KPSPublic {
         url,
         data: body,
         options: Options(
-            headers: headers, receiveTimeout: 30000, sendTimeout: 30000),
+          headers: headers,
+          receiveTimeout: const Duration(seconds: 30),
+          sendTimeout: const Duration(seconds: 30),
+        ),
       );
 
       final document = XmlDocument.parse(response.data);
